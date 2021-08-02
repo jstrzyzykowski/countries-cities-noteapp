@@ -1,0 +1,14 @@
+.roundStatusBar {
+  background-color: cyan;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__status {
+    // background-color: darkcyan;
+    text-align: center;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,14 @@
+.headerStatisticField {
+  display: flex;
+  align-items: center;
+
+  i {
+    margin: 0 5px;
+  }
+
+  &__value {
+    background-color: crimson;
+    width: 50px;
+    text-align: center;
+  }
+}

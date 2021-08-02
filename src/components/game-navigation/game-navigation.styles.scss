@@ -1,0 +1,21 @@
+.gameNavigation {
+  display: flex;
+  list-style: none;
+  background-color: darkcyan;
+  height: 100%;
+  // justify-content: space-around;
+
+  &__item {
+    background-color: darkgoldenrod;
+    width: 25%;
+
+    &-button {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: darkgreen;
+    }
+  }
+}

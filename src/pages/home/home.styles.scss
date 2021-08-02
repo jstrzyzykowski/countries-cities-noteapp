@@ -1,0 +1,14 @@
+.homePage {
+  height: 100vh;
+  position: relative;
+
+  &__buttons {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-row: 1fr 1fr;
+    row-gap: 10px;
+  }
+}

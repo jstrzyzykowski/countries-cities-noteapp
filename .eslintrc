@@ -14,6 +14,9 @@
     "jsx-quotes": ["error", "prefer-double"],
     "react/button-has-type": "off",
     "react/prop-types": "off",
+    "no-console": "off",
+    "react/self-closing-comp": "off",
+    "jsx-a11y/label-has-associated-control": "off"
     // "linebreak-style": ["error", "windows"]
   }
 }

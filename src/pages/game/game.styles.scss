@@ -1,0 +1,36 @@
+.gamePage {
+  height: 100vh;
+  background-color: burlywood;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+
+  &__header {
+    height: 50px;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+
+    &-points {
+      background-color: chocolate;
+      display: flex;
+      align-items: center;
+      // height: 35px;
+      height: 100%;
+      // width: 180px;
+    }
+  }
+
+  &__main {
+    background-color: chartreuse;
+    flex-grow: 1;
+    position: relative;
+    padding: 50px 10px 10px;
+  }
+
+  &__navigation {
+    height: 70px;
+  }
+}

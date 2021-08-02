@@ -9,6 +9,8 @@ export default function GameCategoryList() {
       <GameCategoryListItem />
       <GameCategoryListItem />
       <GameCategoryListItem />
+      <GameCategoryListItem />
+      <GameCategoryListItem />
     </ul>
   );
 }

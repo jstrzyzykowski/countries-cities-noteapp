@@ -1,8 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import './game-navigation.styles.scss';
 
 export default function GameNavigation() {
+  const history = useHistory();
+
   return (
     <ul className="gameNavigation">
       <li className="gameNavigation__item">
@@ -16,7 +19,7 @@ export default function GameNavigation() {
         </button>
       </li>
       <li className="gameNavigation__item">
-        <button className="gameNavigation__item-button">
+        <button className="gameNavigation__item-button" onClick={() => history.push('/new-game/history')}>
           <p>Game History</p>
         </button>
       </li>

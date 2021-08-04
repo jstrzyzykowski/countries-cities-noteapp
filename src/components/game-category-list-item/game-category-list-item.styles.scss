@@ -7,18 +7,37 @@
     border-radius: 12px;
     border-bottom: 3px solid #4B3A92;
 
-    i {
+    &-confirmButton {
+      border: none;
       margin-right: 5px;
       margin-bottom: 2px;
-      font-size: 32px;
       width: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #F9CA2A;
-      color: white;
+      // color: white;
       border-radius: 10px;
-      box-shadow: 0 4px 1px 0 #EAA800;
+      
+
+      &.progress {
+        background-color: #D9DADD;
+        box-shadow: 0 4px 1px 0 #8F9099;
+        color: gray;
+      }
+
+      &.check {
+        background-color: #F9CA2A;
+        box-shadow: 0 4px 1px 0 #EAA800;
+      }
+
+      &.ready {
+        background-color: #73BB6D;
+        box-shadow: 0 4px 1px 0 #4D993F;
+      }
+    }
+
+    i {
+      font-size: 32px;
     }
 
     &-text {

@@ -18,7 +18,9 @@ export default function GameCategoryListItem({ category }) {
   return (
     <div className="gameCategoryListItem">
       <div className="gameCategoryListItem__content">
-        <i className="fas fa-cat"></i>
+        <button className="gameCategoryListItem__content-confirmButton progress">
+          <i className="fas fa-cat"></i>
+        </button>
         <div className="gameCategoryListItem__content-text">
           <p className="gameCategoryListItem__content-text-categoryName">{category}</p>
           <input className="gameCategoryListItem__content-text-input" type="text" name={`answer-${category}`} placeholder="Your answer..." onChange={handleChange} />

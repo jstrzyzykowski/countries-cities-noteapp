@@ -11,6 +11,10 @@
   position: relative;
   overflow: hidden;
 
+  &.fluid {
+    width: 100%;
+  }
+
   // &::before {
   //   content: '';
   //   position: absolute;

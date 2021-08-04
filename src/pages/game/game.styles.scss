@@ -1,8 +1,6 @@
 .gamePage {
   height: 100vh;
-  // background-color: burlywood;
   display: flex;
-  // align-items: center;
   flex-direction: column;
   position: relative;
 
@@ -12,7 +10,6 @@
     left: 0;
     width: 100%;
     height: 50px;
-    // background-color: cadetblue;
     background-color: #4F3D9E;
     display: flex;
     align-items: center;
@@ -21,21 +18,15 @@
     z-index: 10;
 
     &-points {
-      // background-color: chocolate;
       display: grid;
       grid-template-columns: repeat(2, auto);
       column-gap: 16px;
-      // align-items: center;
-      // height: 35px;
       height: 100%;
-      // width: 180px;
     }
   }
 
   &__main {
-    // background-color: chartreuse;
     flex-grow: 1;
-    // position: relative;
     padding: 50px 10px 100px;
     margin-top: 50px;
     overflow: scroll;
@@ -43,7 +34,6 @@
 
   &__navigation {
     height: 90px;
-    // height: 70px;
     position: fixed;
     bottom: 0;
     left: 0;

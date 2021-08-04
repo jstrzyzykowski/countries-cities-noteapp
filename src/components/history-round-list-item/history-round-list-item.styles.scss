@@ -1,9 +1,8 @@
 .historyRoundListItem {
-  // background-color: indianred;
   background-color: rgba(255,255,255,0.1);
   display: flex;
   align-items: center;
-  height: 46px;
+  height: 56px;
   padding: 0 10px;
   border-radius: 10px;
   border-bottom: 3px solid #4B3A92;
@@ -21,9 +20,7 @@
     align-items: center;
     margin-bottom: 4px;
     font-weight: bold;
-    // color: #424242;
     color: gray;
-    // color: whitesmoke;
   }
 
   &__roundPoints {
@@ -35,7 +32,6 @@
 
   &__detailsButton {
     border: none;
-    // padding: 5px 10px;
     height: 25px;
     padding: 0 10px;
     box-shadow: 0 4px 0 0 #4D993F;

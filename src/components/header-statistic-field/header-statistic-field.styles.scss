@@ -6,21 +6,15 @@
     height: 30px;
     width: 30px;
     margin-right: 6px;
-
-    &-image {
-
-    }
   }
 
   &__value {
-    // display: flex;
     background-color: #7C6AE0;
     box-shadow: 0 3px 1px 0px #6C5ACF;
     border-radius: 8px;
     padding: 5px 20px;
     margin-bottom: 3px;
     color: whitesmoke;
-    // width: 50px;
     text-align: center;
     font-weight: bold;
   }

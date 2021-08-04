@@ -1,10 +1,11 @@
 .homePage {
   height: 100vh;
   position: relative;
+  background-color: #6B59CC;
 
   &__buttons {
     position: absolute;
-    top: 60%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     display: grid;

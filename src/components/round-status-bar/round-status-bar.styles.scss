@@ -1,10 +1,28 @@
 .roundStatusBar {
-  background-color: cyan;
+  // background-color: cyan;
   padding: 5px;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  transform: translateY(100%);
   width: 100%;
+  color: whitesmoke;
+  font-weight: bold;
+
+  &.progress {
+    background-color: #E45A53;
+    box-shadow: 0 3px 1px 0 #B32A43;
+  }
+
+  &.check {
+    background-color: #F4C900;
+    box-shadow: 0 3px 1px 0 #E4A700;
+  }
+
+  &.ready {
+    background-color: #73BB6D;
+    box-shadow: 0 3px 1px 0 #4D993F;
+  }
 
   &__status {
     // background-color: darkcyan;

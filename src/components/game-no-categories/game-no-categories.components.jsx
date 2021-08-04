@@ -1,13 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-
-import CustomButton from '../custom-button/custom-button.components';
 
 import './game-no-categories.styles.scss';
 
 export default function GameNoCategories() {
-  const history = useHistory();
-
   return (
     <div className="gameNoCategories">
       <div className="gameNoCategories__imageContainer">
@@ -21,9 +16,6 @@ export default function GameNoCategories() {
         {' '}
         and choose some of them to start game
       </p>
-      <CustomButton handleClick={() => history.push('/categories')}>
-        Categories
-      </CustomButton>
     </div>
   );
 }

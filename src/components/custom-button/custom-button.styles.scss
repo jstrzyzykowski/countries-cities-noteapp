@@ -2,4 +2,34 @@
   width: 200px;
   height: 50px;
   border: none;
+  background-color: #69BB70;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: 0 5px 1px 0px #409944;
+  position: relative;
+  overflow: hidden;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 30px;
+  //   height: 100px;
+  //   transform: rotate(45deg) translateY(-40%);
+  //   background-color: rgba(255,255,255,0.1);
+  // }
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 20px;
+  //   width: 20px;
+  //   height: 100px;
+  //   transform: rotate(45deg) translate(-80%, -20%);
+  //   background-color: rgba(255,255,255,0.1);
+  // }
 }

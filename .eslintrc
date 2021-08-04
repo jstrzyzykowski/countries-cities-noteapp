@@ -16,7 +16,10 @@
     "react/prop-types": "off",
     "no-console": "off",
     "react/self-closing-comp": "off",
-    "jsx-a11y/label-has-associated-control": "off"
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "no-case-declarations": "off"
     // "linebreak-style": ["error", "windows"]
   }
 }

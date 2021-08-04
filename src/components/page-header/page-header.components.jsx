@@ -1,5 +1,7 @@
 import React from 'react';
 
+import IconCategories from '../../assets/icon-categories.png';
+
 import HeaderStatisticField from '../header-statistic-field/header-statistic-field.components';
 
 import './page-header.styles.scss';
@@ -11,7 +13,7 @@ export default function PageHeader({ title, handleClick }) {
         <i className="fas fa-angle-left"></i>
       </button>
       <p className="pageHeader__title">{title}</p>
-      <HeaderStatisticField />
+      <HeaderStatisticField iconImage={IconCategories} />
     </div>
   );
 }

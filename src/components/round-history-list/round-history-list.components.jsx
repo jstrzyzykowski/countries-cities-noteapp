@@ -1,11 +1,11 @@
 import React from 'react';
 import GameCategoryListItem from '../game-category-list-item/game-category-list-item.components';
 
-import './game-category-list.styles.scss';
+import './round-history-list.styles.scss';
 
-export default function GameCategoryList() {
+export default function RoundHistoryList() {
   return (
-    <div className="gameCategoryList">
+    <div className="roundHistoryList">
       <GameCategoryListItem category="animal" />
       <GameCategoryListItem category="city" />
       <GameCategoryListItem category="country" />

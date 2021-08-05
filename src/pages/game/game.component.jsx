@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useSelector } from 'react-redux';
+
 // import IconCategories from '../../assets/icon-categories.png';
 import IconPointGame from '../../assets/icon-point-game.png';
 import IconPointRound from '../../assets/icon-point-round.png';
@@ -12,14 +14,15 @@ import RoundStatusBar from '../../components/round-status-bar/round-status-bar.c
 import './game.styles.scss';
 
 export default function GamePage() {
+  const { name, description } = useSelector((state) => state.round.status);
+
   return (
     <div className="gamePage">
       <div className="gamePage__header">
-        <RoundStatusBar status="progress" text="Round in progress..." />
+        <RoundStatusBar status={name} text={description} />
         <div className="gamePage__header-points">
           <HeaderStatisticField iconImage={IconPointRound} />
           <HeaderStatisticField iconImage={IconPointGame} />
-          {/* <HeaderStatisticField /> */}
         </div>
       </div>
       <div className="gamePage__main">

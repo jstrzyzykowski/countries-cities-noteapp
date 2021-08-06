@@ -9,10 +9,15 @@
   }
 
   &__value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #7C6AE0;
     box-shadow: 0 3px 1px 0px #6C5ACF;
     border-radius: 8px;
-    padding: 5px 20px;
+    // padding: 5px 20px;
+    height: 30px;
+    width: 70px;
     margin-bottom: 3px;
     color: whitesmoke;
     text-align: center;

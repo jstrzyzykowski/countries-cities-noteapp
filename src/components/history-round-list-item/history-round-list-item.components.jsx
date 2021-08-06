@@ -3,14 +3,16 @@ import { useHistory } from 'react-router-dom';
 
 import './history-round-list-item.styles.scss';
 
-export default function HistoryRoundListItem() {
+export default function HistoryRoundListItem({ round, roundNumber }) {
   const history = useHistory();
+  const pointsUser = round.reduce((acc, question) => acc + Number(question.points), 0);
+  const pointsMax = round.length * 10;
 
   return (
     <div className="historyRoundListItem">
-      <p className="historyRoundListItem__roundNumber">1</p>
-      <p className="historyRoundListItem__roundPoints">60/120</p>
-      <button className="historyRoundListItem__detailsButton" onClick={() => history.push('/new-game/history/1')}>
+      <p className="historyRoundListItem__roundNumber">{roundNumber}</p>
+      <p className="historyRoundListItem__roundPoints">{`${pointsUser}/${pointsMax}`}</p>
+      <button className="historyRoundListItem__detailsButton" onClick={() => history.push(`/new-game/history/${roundNumber}`)}>
         Details
       </button>
     </div>

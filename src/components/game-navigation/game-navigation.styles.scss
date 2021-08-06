@@ -23,6 +23,16 @@
       box-shadow: 0 5px 1px #6D5BD2;
       background-color: #7D6BE3;
 
+      &.active {
+        box-shadow: 0 5px 1px #4D993F;
+        background-color: #73BB6D;
+      }
+
+      &.inactive {
+        box-shadow: 0 5px 1px #B32A43;
+        background-color: #E45A53;
+      }
+
       &-imageContainer {
         margin-top: 5px;
         margin-bottom: 2px;

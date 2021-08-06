@@ -22,7 +22,10 @@
     "no-case-declarations": "off",
     "import/prefer-default-export": "off",
     "no-param-reassign": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "max-len": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off"
     // "linebreak-style": ["error", "windows"]
   }
 }

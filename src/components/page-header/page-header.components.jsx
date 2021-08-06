@@ -6,14 +6,14 @@ import HeaderStatisticField from '../header-statistic-field/header-statistic-fie
 
 import './page-header.styles.scss';
 
-export default function PageHeader({ title, handleClick }) {
+export default function PageHeader({ title, handleClick, stat }) {
   return (
     <div className="pageHeader">
       <button className="pageHeader__backButton" onClick={handleClick}>
         <i className="fas fa-angle-left"></i>
       </button>
       <p className="pageHeader__title">{title}</p>
-      <HeaderStatisticField iconImage={IconCategories} />
+      <HeaderStatisticField iconImage={IconCategories} points={stat} />
     </div>
   );
 }

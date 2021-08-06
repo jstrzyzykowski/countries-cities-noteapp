@@ -2,38 +2,51 @@
   &__content {
     padding: 5px;
     display: flex;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.2);
     padding: 10px;
     border-radius: 12px;
     border-bottom: 3px solid #4B3A92;
 
     &-confirmButton {
       border: none;
-      margin-right: 5px;
+      margin-right: 10px;
       margin-bottom: 2px;
       width: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
       // color: white;
+      color: whitesmoke;
       border-radius: 10px;
-      
-
-      &.progress {
-        background-color: #D9DADD;
-        box-shadow: 0 4px 1px 0 #8F9099;
-        color: gray;
-      }
-
-      &.check {
-        background-color: #F9CA2A;
+      background-color: #F9CA2A;
         box-shadow: 0 4px 1px 0 #EAA800;
+
+      &.inactive {
+      background-color: #D9DADD;
+      box-shadow: 0 4px 1px 0 #8F9099;
+      color: gray;
       }
 
-      &.ready {
+      &.confirmed {
         background-color: #73BB6D;
         box-shadow: 0 4px 1px 0 #4D993F;
       }
+
+      // &.progress {
+      //   background-color: #D9DADD;
+      //   box-shadow: 0 4px 1px 0 #8F9099;
+      //   color: gray;
+      // }
+
+      // &.check {
+      //   background-color: #F9CA2A;
+      //   box-shadow: 0 4px 1px 0 #EAA800;
+      // }
+
+      // &.ready {
+      //   background-color: #73BB6D;
+      //   box-shadow: 0 4px 1px 0 #4D993F;
+      // }
     }
 
     i {
@@ -48,7 +61,7 @@
       &-categoryName {
         font-size: 14px;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        // letter-spacing: 1px;
         font-weight: bold;
         margin-bottom: 2px;
         color: whitesmoke;

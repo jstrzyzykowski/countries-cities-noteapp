@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { addRoundQuestion, setRoundStatus } from '../../redux/round/round.actions';
-// eslint-disable-next-line no-unused-vars
 import { STATUS_PROGRESS } from '../../redux/round/round.data';
 
 import CustomButton from '../../components/custom-button/custom-button.components';

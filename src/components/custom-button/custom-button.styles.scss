@@ -20,25 +20,25 @@
     box-shadow: 0 5px 1px 0px #B32A43;
   }
 
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 30px;
-  //   height: 100px;
-  //   transform: rotate(45deg) translateY(-40%);
-  //   background-color: rgba(255,255,255,0.1);
-  // }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100px;
+    transform: rotate(45deg) translateY(-40%);
+    background-color: rgba(255,255,255,0.1);
+  }
 
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   right: 20px;
-  //   width: 20px;
-  //   height: 100px;
-  //   transform: rotate(45deg) translate(-80%, -20%);
-  //   background-color: rgba(255,255,255,0.1);
-  // }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 20px;
+    height: 100px;
+    transform: rotate(45deg) translate(-80%, -20%);
+    background-color: rgba(255,255,255,0.1);
+  }
 }

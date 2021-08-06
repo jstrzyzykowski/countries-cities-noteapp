@@ -4,10 +4,10 @@ import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { openModal } from '../../redux/modal/modal.actions';
 
-import IconNavigationBlock from '../../assets/icon-navigation-block.png';
-import IconNavigationNext from '../../assets/icon-navigation-next.png';
-import IconNavigationHistory from '../../assets/icon-navigation-history.png';
-import IconNavigationFinish from '../../assets/icon-navigation-finish.png';
+// import IconNavigationBlock from '../../assets/icon-navigation-block.png';
+// import IconNavigationNext from '../../assets/icon-navigation-next.png';
+// import IconNavigationHistory from '../../assets/icon-navigation-history.png';
+// import IconNavigationFinish from '../../assets/icon-navigation-finish.png';
 
 import './game-navigation.styles.scss';
 import { resetRound, setRoundStatus } from '../../redux/round/round.actions';
@@ -45,29 +45,32 @@ export default function GameNavigation() {
           onClick={() => dispatch(setRoundStatus(STATUS_CHECK))}
           disabled={status.name !== 'progress'}
         >
-          <div className="gameNavigation__item-button-imageContainer">
+          {/* <div className="gameNavigation__item-button-imageContainer">
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationBlock} alt="" />
-          </div>
+          </div> */}
+          <i className="fas fa-lock"></i>
           <p>Block</p>
         </button>
       </li>
       <li className="gameNavigation__item">
         <button
-          className={`gameNavigation__item-button ${status.name === 'ready' ? 'active' : 'inactive'}`}
+          className={`gameNavigation__item-button ${status.name === 'ready' ? 'ready' : 'inactive'}`}
           disabled={status.name !== 'ready'}
           onClick={handleClickNext}
         >
-          <div className="gameNavigation__item-button-imageContainer">
+          {/* <div className="gameNavigation__item-button-imageContainer">
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationNext} alt="" />
-          </div>
+          </div> */}
+          <i className="fas fa-forward"></i>
           <p>Next</p>
         </button>
       </li>
       <li className="gameNavigation__item">
         <button className="gameNavigation__item-button active" onClick={() => history.push('/new-game/history')}>
-          <div className="gameNavigation__item-button-imageContainer">
+          {/* <div className="gameNavigation__item-button-imageContainer">
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationHistory} alt="" />
-          </div>
+          </div> */}
+          <i className="fas fa-save"></i>
           <p>History</p>
         </button>
       </li>
@@ -76,9 +79,10 @@ export default function GameNavigation() {
           className="gameNavigation__item-button active"
           onClick={() => dispatch(openModal({ modalType: 'GameResultModal' }))}
         >
-          <div className="gameNavigation__item-button-imageContainer">
+          {/* <div className="gameNavigation__item-button-imageContainer">
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationFinish} alt="" />
-          </div>
+          </div> */}
+          <i className="fas fa-trophy"></i>
           <p>Finish</p>
         </button>
       </li>

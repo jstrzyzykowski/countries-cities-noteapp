@@ -10,7 +10,7 @@ import ModalWrapper from '../../modal/modal-wrapper.component';
 import CustomButton from '../custom-button/custom-button.components';
 
 import IconPointGame from '../../assets/icon-point-game.png';
-import IconResultStar from '../../assets/icon-result-star.png';
+// import IconResultStar from '../../assets/icon-result-star.png';
 
 import './game-result-modal.styles.scss';
 
@@ -39,7 +39,7 @@ export default function GameResultModal() {
   return (
     <ModalWrapper header="Game Result">
       <div className="gameResultModal__stars">
-        <div className="gameResultModal__stars-imageContainer">
+        {/* <div className="gameResultModal__stars-imageContainer">
           <img className="gameResultModal__stars-imageContainer-image" src={IconResultStar} alt="" />
         </div>
         <div className="gameResultModal__stars-imageContainer">
@@ -47,7 +47,10 @@ export default function GameResultModal() {
         </div>
         <div className="gameResultModal__stars-imageContainer">
           <img className="gameResultModal__stars-imageContainer-image" src={IconResultStar} alt="" />
-        </div>
+        </div> */}
+        <i className="fas fa-star"></i>
+        <i className="fas fa-star"></i>
+        <i className="fas fa-star"></i>
       </div>
       <div className="gameResultModal__result">
         <div className="gameResultModal__result-total">

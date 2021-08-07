@@ -19,17 +19,20 @@
       color: whitesmoke;
       border-radius: 10px;
       background-color: #F9CA2A;
-        box-shadow: 0 4px 1px 0 #EAA800;
+      box-shadow: 0 4px 1px 0 #EAA800;
+      text-shadow: 0 2px 1px #a57900;
 
       &.inactive {
       background-color: #D9DADD;
-      box-shadow: 0 4px 1px 0 #8F9099;
+      box-shadow: 0 4px 1px 0 #acacac;
       color: gray;
+      text-shadow: 0 2px 1px #ffffff;
       }
 
       &.confirmed {
         background-color: #73BB6D;
         box-shadow: 0 4px 1px 0 #4D993F;
+        text-shadow: 0 2px 1px #3f7a34;
       }
 
       // &.progress {
@@ -47,10 +50,10 @@
       //   background-color: #73BB6D;
       //   box-shadow: 0 4px 1px 0 #4D993F;
       // }
-    }
 
-    i {
-      font-size: 32px;
+      i {
+        font-size: 32px;
+      }
     }
 
     &-text {
@@ -91,6 +94,7 @@
       box-sizing: content-box;
       background-color: #E45A53;
       box-shadow: 0 4px 1px 0 #B32A43;
+      text-shadow: 0 2px 1px #811f31;
       border-top: 3px solid #4B3A92;
       position: relative;
       transform: translateY(-8px);
@@ -100,11 +104,13 @@
       &.checked {
         background-color: #73BB6D;
         box-shadow: 0 4px 1px 0 #4D993F;
+        text-shadow: 0 2px 1px #3f7a34;
       }
 
       &.inactive {
         background-color: #D9DADD;
         box-shadow: 0 4px 1px 0 #8F9099;
+        text-shadow: 0 2px 1px #ffffff;
         
         .gameCategoryListItem__checker-label-value {
           color: gray;

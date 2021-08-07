@@ -8,6 +8,7 @@
   font-size: 16px;
   border-radius: 12px;
   box-shadow: 0 5px 1px 0px #409944;
+  text-shadow: 0 1px 1px #3f7a34;
   position: relative;
   overflow: hidden;
 
@@ -16,8 +17,13 @@
   }
 
   &:disabled {
-    background-color: #E45A53;
-    box-shadow: 0 5px 1px 0px #B32A43;
+    // background-color: #E45A53;
+    // box-shadow: 0 5px 1px 0px #B32A43;
+    // text-shadow: 0 1px 1px #811f31;
+    background-color: #D9DADD;
+    box-shadow: 0 4px 1px 0 #acacac;
+    text-shadow: 0 2px 1px #ffffff;
+    color: rgb(165, 165, 165);
   }
 
   &::before {

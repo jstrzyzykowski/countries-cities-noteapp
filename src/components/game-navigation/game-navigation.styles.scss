@@ -32,7 +32,7 @@
         left: 0;
         height: 90px;
         width: 30px;
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.07);
         transform: rotate(45deg);
       }
 
@@ -43,7 +43,7 @@
         right: 0;
         height: 90px;
         width: 20px;
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.07);
         transform: rotate(45deg);
       }
 
@@ -55,25 +55,25 @@
         box-shadow: 0 5px 1px #6D5BD2;
         background-color: #7D6BE3;
         color: whitesmoke;
-        text-shadow: 0 2px 2px #4F3EA0;
+        text-shadow: 0 2px 1px #4F3EA0;
       }
 
       &.inactive {
         background-color: #D9DADD;
         box-shadow: 0 4px 1px 0 #8F9099;
         color: rgb(160, 160, 160);
-        text-shadow: 0 2px 2px #ffffff;
+        text-shadow: 0 2px 1px #ffffff;
       }
 
       &.ready {
         box-shadow: 0 5px 1px #E4A700;
         background-color: #F4C900;
         color: whitesmoke;
-        text-shadow: 0 2px 2px #a57900;
+        text-shadow: 0 2px 1px #a57900;
 
         &::before,
         &::after {
-          background-color: rgba(255,255,255,0.3);
+          background-color: rgba(255,255,255,0.2);
         }
       }
 

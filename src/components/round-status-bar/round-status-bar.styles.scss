@@ -11,16 +11,19 @@
   &.progress {
     background-color: #E45A53;
     box-shadow: 0 3px 1px 0 #B32A43;
+    text-shadow: 0 1px 1px #811f31;
   }
 
   &.check {
     background-color: #F4C900;
     box-shadow: 0 3px 1px 0 #E4A700;
+    text-shadow: 0 1px 1px #a57900;
   }
 
   &.ready {
     background-color: #73BB6D;
     box-shadow: 0 3px 1px 0 #4D993F;
+    text-shadow: 0 1px 1px #3f7a34;
   }
 
   &__status {

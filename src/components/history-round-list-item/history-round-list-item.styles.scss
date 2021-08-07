@@ -11,7 +11,8 @@
   &__roundNumber {
     border-radius: 6px;
     background-color: #D9DADD;
-    box-shadow: 0 4px 1px 0 #8F9099;
+    box-shadow: 0 4px 1px 0 #acacac;
+    text-shadow: 0 2px 1px #ffffff;
     margin-right: 10px;
     width: 35px;
     height: 35px;
@@ -38,6 +39,7 @@
     margin-bottom: 4px;
     border-radius: 6px;
     background-color: #73BB6D;
+    text-shadow: 0 2px 1px #3f7a34;
     font-weight: bold;
     color: whitesmoke;
   }

@@ -7,19 +7,33 @@ import { PersistGate } from 'redux-persist/integration/react';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { store, persistor } from './redux/store';
+// eslint-disable-next-line no-unused-vars
+import i18n from './i18n';
 
 import './index.css';
 
-ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <PersistGate persistor={persistor}>
-        <App />
-      </PersistGate>
-    </Router>
-  </Provider>,
-  document.getElementById('root'),
-);
+const rootElement = document.getElementById('root');
+
+function render() {
+  ReactDOM.render(
+    <Provider store={store}>
+      <Router>
+        <PersistGate persistor={persistor}>
+          <App />
+        </PersistGate>
+      </Router>
+    </Provider>,
+    rootElement,
+  );
+}
+
+if (module.hot) {
+  module.hot.accept('./App.js', () => {
+    setTimeout(render());
+  });
+}
+
+render();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,15 +1,18 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { addRoundQuestion, setRoundStatus } from '../../redux/round/round.actions';
 import { STATUS_PROGRESS } from '../../redux/round/round.data';
 
 import CustomButton from '../../components/custom-button/custom-button.components';
+import ControllerLanguage from '../../components/controller-language/controller-language.components';
 
 import './home.styles.scss';
 
 export default function HomePage() {
+  const { t } = useTranslation();
   const history = useHistory();
   const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.category);
@@ -33,12 +36,13 @@ export default function HomePage() {
 
   return (
     <div className="homePage">
+      <ControllerLanguage />
       <div className="homePage__buttons">
         <CustomButton handleClick={handleClickGame} disabled={checkedCategories.length === 0}>
-          Game
+          {t('home_button_1')}
         </CustomButton>
         <CustomButton handleClick={() => history.push('/categories')}>
-          Categories
+          {t('home_button_2')}
         </CustomButton>
       </div>
     </div>

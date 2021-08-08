@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { openModal } from '../../redux/modal/modal.actions';
@@ -15,6 +16,7 @@ import { STATUS_CHECK, STATUS_PROGRESS } from '../../redux/round/round.data';
 import { addGamePoints, addRoundData } from '../../redux/game/game.actions';
 
 export default function GameNavigation() {
+  const { t } = useTranslation();
   const history = useHistory();
   const dispatch = useDispatch();
   const { status, questions } = useSelector((state) => state.round);
@@ -49,7 +51,7 @@ export default function GameNavigation() {
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationBlock} alt="" />
           </div> */}
           <i className="fas fa-lock"></i>
-          <p>Block</p>
+          <p>{t('navigation_block')}</p>
         </button>
       </li>
       <li className="gameNavigation__item">
@@ -62,7 +64,7 @@ export default function GameNavigation() {
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationNext} alt="" />
           </div> */}
           <i className="fas fa-forward"></i>
-          <p>Next</p>
+          <p>{t('navigation_next')}</p>
         </button>
       </li>
       <li className="gameNavigation__item">
@@ -71,7 +73,7 @@ export default function GameNavigation() {
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationHistory} alt="" />
           </div> */}
           <i className="fas fa-save"></i>
-          <p>History</p>
+          <p>{t('navigation_history')}</p>
         </button>
       </li>
       <li className="gameNavigation__item">
@@ -83,7 +85,7 @@ export default function GameNavigation() {
             <img className="gameNavigation__item-button-imageContainer-image" src={IconNavigationFinish} alt="" />
           </div> */}
           <i className="fas fa-trophy"></i>
-          <p>Finish</p>
+          <p>{t('navigation_finish')}</p>
         </button>
       </li>
     </ul>

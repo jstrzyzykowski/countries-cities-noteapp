@@ -1,0 +1,34 @@
+{
+  "home_button_1": "Rozgrywka",
+  "home_button_2": "Kategorie",
+
+  "categories_header_title": "Kategorie",
+  "category_animal": "Zwierzę",
+  "category_country": "Państwo",
+  "category_city": "Miasto",
+  "category_person": "Osoba",
+  "category_thing": "Rzecz",
+  "category_plant": "Roślina",
+  "category_profession": "Zawód",
+
+  "round_status_bar_progress": "Runda w toku...",
+  "round_status_bar_check": "Sprawdz swoje odpowiedzi",
+  "round_status_bar_ready": "Gotowy",
+
+  "question_input_text_placeholder": "Twoja odpowiedź...",
+
+  "navigation_block": "Zablokuj",
+  "navigation_next": "Dalej",
+  "navigation_history": "Historia",
+  "navigation_finish": "Koniec",
+
+  "history_header_title": "Historia",
+  "history_details": "Szczegóły",
+
+  "details_header_title": "Runda",
+  "details_question_empty": "Brak",
+
+  "resultModal_header_title": "Wynik Gry",
+  "resultModal_total": "Razem punktów",
+  "resultModal_button_finish": "Zakończ"
+}

@@ -1,0 +1,34 @@
+{
+  "home_button_1": "Game",
+  "home_button_2": "Categories",
+
+  "categories_header_title": "Categories",
+  "category_animal": "Animal",
+  "category_country": "Country",
+  "category_city": "City",
+  "category_person": "Person",
+  "category_thing": "Thing",
+  "category_plant": "Plant",
+  "category_profession": "Profession",
+
+  "round_status_bar_progress": "Round in progress...",
+  "round_status_bar_check": "Check your answers",
+  "round_status_bar_ready": "Ready",
+
+  "question_input_text_placeholder": "Your answer...",
+
+  "navigation_block": "Block",
+  "navigation_next": "Next",
+  "navigation_history": "History",
+  "navigation_finish": "Finish",
+
+  "history_header_title": "History",
+  "history_details": "Details",
+
+  "details_header_title": "Round",
+  "details_question_empty": "Empty",
+
+  "resultModal_header_title": "Game Result",
+  "resultModal_total": "Total points",
+  "resultModal_button_finish": "Finish"
+}

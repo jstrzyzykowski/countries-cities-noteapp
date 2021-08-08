@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { closeModal } from '../../redux/modal/modal.actions';
@@ -15,6 +16,7 @@ import IconPointGame from '../../assets/icon-point-game.png';
 import './game-result-modal.styles.scss';
 
 export default function GameResultModal() {
+  const { t } = useTranslation();
   const history = useHistory();
   const dispatch = useDispatch();
   const { gamePoints, rounds } = useSelector((state) => state.game);
@@ -37,7 +39,7 @@ export default function GameResultModal() {
   };
 
   return (
-    <ModalWrapper header="Game Result">
+    <ModalWrapper header={t('resultModal_header_title')}>
       <div className="gameResultModal__stars">
         {/* <div className="gameResultModal__stars-imageContainer">
           <img className="gameResultModal__stars-imageContainer-image" src={IconResultStar} alt="" />
@@ -57,7 +59,7 @@ export default function GameResultModal() {
           <div className="gameResultModal__result-total-imageContainer">
             <img className="gameResultModal__result-total-imageContainer-image" src={IconPointGame} alt="" />
           </div>
-          <p className="gameResultModal__result-total-title">Total points</p>
+          <p className="gameResultModal__result-total-title">{t('resultModal_total')}</p>
           <p className="gameResultModal__result-total-value">{gamePoints}</p>
         </div>
         <div className="gameResultModal__result-details">
@@ -76,7 +78,7 @@ export default function GameResultModal() {
         </div>
       </div>
       <CustomButton fluid handleClick={handleClick}>
-        Finish
+        {t('resultModal_button_finish')}
       </CustomButton>
     </ModalWrapper>
   );

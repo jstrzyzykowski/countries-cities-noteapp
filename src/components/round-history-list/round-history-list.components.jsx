@@ -5,10 +5,10 @@ import RoundHistoryListItem from '../round-history-list-item/round-history-list-
 
 import './round-history-list.styles.scss';
 
-export default function RoundHistoryList({ rounds }) {
+export default function RoundHistoryList({ questions }) {
   return (
     <div className="roundHistoryList">
-      {rounds.map((round) => <RoundHistoryListItem key={round.category} round={round} />)}
+      {questions.map((question) => <RoundHistoryListItem key={question.category} question={question} />)}
       {/* TODO: Create RoundHistoryListItem === question in round in rounds in game state */}
       {/* <RoundHistoryListItem /> */}
     </div>

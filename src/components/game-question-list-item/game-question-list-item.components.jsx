@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { addRoundPoints, setQuestionAnswer } from '../../redux/round/round.actions';
@@ -6,6 +7,7 @@ import { addRoundPoints, setQuestionAnswer } from '../../redux/round/round.actio
 import './game-question-list-item.styles.scss';
 
 export default function GameQuestionListItem({ question }) {
+  const { t } = useTranslation();
   const { categoryUniqueName, userAnswer, pointsForAnswer, confirmed } = question;
   const currQuestion = useSelector((state) => state.round.questions.find((element) => element.categoryUniqueName === categoryUniqueName));
   const { status } = useSelector((state) => state.round);
@@ -64,12 +66,12 @@ export default function GameQuestionListItem({ question }) {
           <i className={currCategory.displayIcon}></i>
         </button>
         <div className="gameCategoryListItem__content-text">
-          <p className="gameCategoryListItem__content-text-categoryName">{currCategory.displayName}</p>
+          <p className="gameCategoryListItem__content-text-categoryName">{t(`category_${currCategory.uniqueName}`)}</p>
           <input
             className="gameCategoryListItem__content-text-input"
             type="text"
             name={`answer-${categoryUniqueName}`}
-            placeholder="Your answer..."
+            placeholder={t('question_input_text_placeholder')}
             value={questionData[`answer-${categoryUniqueName}`]}
             onChange={handleChange}
             disabled={status.name !== 'progress'}

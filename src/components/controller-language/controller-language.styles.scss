@@ -1,0 +1,43 @@
+.controllerLanguage {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  // padding: 3px;
+
+  &__label {
+    // border: none;
+    display: flex;
+    // padding: 3px;
+    height: 30px;
+    width: 46px;
+    // width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    border-radius: 4px;
+    
+    &-input {
+      opacity: 0;
+    }
+
+    &:first-of-type {
+      margin-right: 10px;
+    }
+
+    &--pl {
+      background-image: url('../../assets/flag-pl.jpg');
+      box-shadow: inset 0 -4px 0 0 rgba(0,0,0,0.3);
+    }
+
+    &--en {
+      background-image: url('../../assets/flag-en.jpg');
+      box-shadow: inset 0 -4px 0 0 rgba(0,0,0,0.5);
+    }
+
+    &.active {
+      filter: none;
+    }
+  }
+}

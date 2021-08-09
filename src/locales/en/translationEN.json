@@ -10,6 +10,11 @@
   "category_thing": "Thing",
   "category_plant": "Plant",
   "category_profession": "Profession",
+  "category_color": "Color",
+  "category_dish": "Dish",
+  "category_name": "Name",
+  "category_game": "Game",
+  "category_instrument" : "Instrument",
 
   "round_status_bar_progress": "Round in progress...",
   "round_status_bar_check": "Check your answers",

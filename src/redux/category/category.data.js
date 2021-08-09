@@ -41,4 +41,34 @@ export const CATEGORIES = [
     displayIcon: 'fas fa-user-astronaut',
     checked: false,
   },
+  {
+    uniqueName: 'color',
+    displayName: 'Color',
+    displayIcon: 'fas fa-palette',
+    checked: false,
+  },
+  {
+    uniqueName: 'dish',
+    displayName: 'Dish',
+    displayIcon: 'fas fa-pizza-slice',
+    checked: false,
+  },
+  {
+    uniqueName: 'name',
+    displayName: 'Name',
+    displayIcon: 'fas fa-signature',
+    checked: false,
+  },
+  {
+    uniqueName: 'game',
+    displayName: 'Game',
+    displayIcon: 'fas fa-gamepad',
+    checked: false,
+  },
+  {
+    uniqueName: 'instrument',
+    displayName: 'Instrument',
+    displayIcon: 'fas fa-guitar',
+    checked: false,
+  },
 ];

@@ -10,6 +10,11 @@
   "category_thing": "Rzecz",
   "category_plant": "Roślina",
   "category_profession": "Zawód",
+  "category_color": "Kolor",
+  "category_dish": "Potrawa",
+  "category_name": "Imię",
+  "category_game": "Gra",
+  "category_instrument": "Instrument",
 
   "round_status_bar_progress": "Runda w toku...",
   "round_status_bar_check": "Sprawdz swoje odpowiedzi",
